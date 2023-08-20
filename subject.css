@@ -1,0 +1,124 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 60px 1fr;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.header{
+
+    background-color: #353535;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2 ;
+}
+.header ul li a {
+    color: #fff;  
+}
+.breadcrump{
+    font-family: "Roboto", sans-serif;
+     
+}
+.breadcrump ul{
+     display: flex; 
+}
+.breadcrump ul li{
+    font-size: 20px; 
+}
+.links{
+    text-decoration: none;
+    position: relative;;
+}
+.links::after{
+     content: "";
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     height: 2px;
+     background-color: red;
+     transform: scaleX(0);
+     transform-origin: right;
+     transition: transform 300ms ease-in;
+}
+.links:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.breadcrump ul li:last-child a{
+    color: red; 
+    
+ }
+
+span i{
+    margin-top: -6px;
+    font-size: 50px;
+}
+.sidebar{
+    background-color: black;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.sidenav a{
+    color: #fff;
+}
+.sidenav h2{
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.sidebar div ul{
+    height: 100%;
+    width: 100%;
+    list-style: none;
+}
+.sidebar ul li{
+    line-height: 50px;
+    
+}
+.sidenav ul{
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.sidebar div ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    padding-left: 40px;
+    font-weight: 300;   
+    width: 100%;
+    border-left: 3px solid transparent;
+}
+.sidebar ul li h2{
+    cursor: default;
+}
+ .sidebar ul li :hover:not(h2){
+     scale: 1.1; 
+    color: rgb(234, 90, 90);
+    
+    border-left-color: rgb(234, 90, 90);
+    transition: all .50s ease;
+}
+.main{
+    background-color: #f9f4f4#fff;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+.main h1 , h2,p{
+    padding-left: 10px;
+}
+p{
+    font-size: 18px;
+}

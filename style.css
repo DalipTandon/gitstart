@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+.up{
+    background: rgba(176, 176, 212, 0.221);
+    display: flex;
+    position: sticky;
+    width: 100%;
+    top: 0;
+}
+ .btn {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 15px;
+    justify-content: space-between;
+
+}
+.btn li{
+    padding: 10px 30px ;
+    
+}
+.btn li a{
+    color: black;
+}
+/* placing profile part on top right corner */
+.right_menu{  
+    justify-content: flex-end;
+    position:absolute;
+   top:0;       
+   right:0;
+}
+.cu-img{
+ background-repeat: no-repeat;
+ width: 10vw;
+}
+.down{
+    background: #353535;
+        text-align: center;
+        }
+.main_menu{
+    display: inline-flex;
+    list-style: none;
+
+}
+.main_menu li{
+    text-decoration: none;
+    width: 10vw;
+    padding: 15px;
+    margin: 15px;
+    height: 7vh;
+}
+.main_menu li a{
+    text-decoration: none;
+color: antiquewhite;
+font-size: large;
+
+}
+/* hover part on main-menu */
+.main_menu li a:hover{
+    background-color: brown;
+    border-radius: 4px;
+
+}
+
+/* hiding sub-menu content using display none */
+.sub-menu{
+    margin-top: 20px;
+    display: none;
+    width: 20vw;
+    position: relative;
+    z-index: 2000;
+   
+}
+.sub-menu li{
+    display: inline;
+}
+.sub-menu li a{
+    text-decoration: none;
+    color: rgb(231, 223, 223);
+    display: flex;
+    padding: 3px;
+}
+
+/* showing content of submenu using display block */
+.main_menu li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background-color:#353535;
+    
+}
+/* slidshow */
+.slideshow{
+    display: flex;
+    width:95vmin;
+    /* position: absolute; */
+    transform: translate(45%,0%);
+    /* top: 50%; */
+    /* left: 50%; */
+    overflow: hidden;
+    border: px solid #ffffff;
+    border-radius: 2px;
+
+    /* box-shadow: 10px 25px 30px #e7cccc; */
+ 
+}
+.wrapper {
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+.wrapper img{
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+  55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-3005);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+
+}
+
+img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* hover part on submenu */
+.sub-menu li a:hover{
+    border-radius: 40px;
+    background-color: #630a0a;
+  
+    /* z-index: 1001; */
+}
+.uni-name{
+    border: 2px solid rgba(0, 0, 0, 0.543);
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+.slideshow{
+    display: flex;
+    justify-content: center;
+}
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 20px;
+    position: static;
+    z-index: 2 ;
+    gap: 40px;
+    word-wrap: break-word;
+    
+
+}
+.box{
+word-wrap: break-word;  
+}
+.c-pic{
+    width: 20vw;
+}
+.box a{
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    text-align: center;
+}
+.text a{
+    word-wrap: break-word;
+    width: 20vw;
+
+}
+
